@@ -8,12 +8,13 @@
     margin-right: 93px;
     padding-top: 24px;
     padding-bottom: 25px;
-}
 
-.logo__black {
+
+&__black {
     color: var(--secondary-text-logo-color);
 }
 
-.logo__white {
+&__white {
     color: var(--footer-text-logo-color);
+}
 }

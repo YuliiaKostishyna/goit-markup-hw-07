@@ -27,9 +27,9 @@
     left: 50%;
     padding: 40px 40px;
     transform: translate(-50%, -50%);
-}
 
-.modal__close-button {
+
+&__close-button {
     display: flex;
     align-items: center;
     background-color: var(--footer-text-logo-color);
@@ -43,14 +43,14 @@
     cursor: pointer;
     outline: none;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.modal__close-button:hover,
-.modal__close-button:focus {
+
+&:hover,
+&:focus {
     fill: var(--prime-text-logo-color);
 }
-
-.modal__title {
+}
+&__title {
     color: var(--text-nav-color);
     font-weight: 700;
     font-size: 20px;
@@ -60,7 +60,7 @@
     margin-bottom: 12px;
 }
 
-.modal__form-label {
+&__form-label {
     color: var(--prime-text-color);
     display: block;
     font-size: 12px;
@@ -69,30 +69,30 @@
     margin-bottom: 4px;
 }
 
-.modal__form-label:not(:first-child) {
+&__form-label:not(:first-child) {
     margin-top: 10px;
 }
 
-.modal__form-control {
+&__form-control {
     position: relative;
     width: 100%;
     height: 40px;
 }
 
-.modal__form-input {
+&__form-input {
     width: 100%;
     padding: 12px 12px 12px 32px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     outline: none;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.modal__form-input:focus {
+
+&:focus {
     border-color: var(--prime-text-logo-color);
 }
-
-.modal__form-icon {
+}
+&__form-icon {
     position: absolute;
     top: 50%;
     left: 12px;
@@ -105,7 +105,7 @@
     fill: var(--prime-text-logo-color);
 }
 
-.modal__form-textarea {
+&__form-textarea {
     color: rgba(117, 117, 117, 0.5);
     width: 100%;
     height: 120px;
@@ -115,26 +115,26 @@
     margin-bottom: 20px;
     outline: none;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.modal__form-textarea:focus {
+&:focus {
     border-color: var(--prime-text-logo-color);
 }
+}
 
-.modal__check {
+&__check {
     position: relative;
 }
 
-.modal__checkbox-input {
+&__checkbox-input {
     margin-left: 0;
 }
 
-.modal__checkbox-label {
+&__checkbox-label {
     margin-top: 20px;
     padding-left: 37px;
 }
 
-.modal__checkbox-label::before {
+&__checkbox-label::before {
     position: absolute;
     top: 50%;
     left: 14px;
@@ -146,7 +146,7 @@
     content: "";
 }
 
-.modal__check-icon {
+&__check-icon {
     position: absolute;
     left: 14px;
     top: 50%;
@@ -165,11 +165,11 @@
     border: none;
 }
 
-.modal__form-link {
+&__form-link {
     color: var(--prime-text-logo-color);
 }
 
-.modal__form-button {
+&__form-button {
     background-color: var(--prime-text-logo-color);
     color: var(--footer-text-logo-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -188,10 +188,11 @@
     border-radius: 4px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.modal__form-button:hover,
-.modal__form-button:focus {
+&:hover,
+&:focus {
     background-color: var(--button-bgc-color);
 
+}
+}
 }
